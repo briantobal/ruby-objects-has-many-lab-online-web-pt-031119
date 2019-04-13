@@ -22,16 +22,6 @@ class Author
   def add_post_by_title(post_title)  
     post = Post.new(post_title)
     post_title.author = self
-    @@all << post 
-            
-        
-        
-   # def add_song_by_name(song_name)
-   # song = Song.new(song_name)
-   # song.artist = self 
-   # @songs << song
-   # end     #def     
-        
-        
+    Post.all << post 
   end     #def 
 end          #class 
