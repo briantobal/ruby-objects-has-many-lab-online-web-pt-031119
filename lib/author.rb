@@ -9,9 +9,7 @@ class Author
   
   def posts 
     Post.all.select {|post| post.author=self} 
-    #we're getting all posts the @@all method in Post 
-    #sorting by the author (.select) then iterating over the posts and grabbing author=self
-    #which is why there's a self there 
+    
   end     #def 
   
   def add_post (new_post)
@@ -22,15 +20,17 @@ class Author
 # => "My Great Blog Post"
   
   def add_post_by_title(post_title)  
-    post_title.author = self    
-    Post.new(post_title)        
+    post = Post.new(post_title)
+    post_title.author = self
+    
+            
         
         
-   # def add_post_by_title(song_name)
+   # def add_song_by_name(song_name)
    # song = Song.new(song_name)
    # song.artist = self 
    # @songs << song
-  #  end     #def     
+   # end     #def     
         
         
   end     #def 
