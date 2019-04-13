@@ -15,6 +15,7 @@ class Author
     new_post.author = self 
   end     #def 
   
+  
 
 end          #class 
 
