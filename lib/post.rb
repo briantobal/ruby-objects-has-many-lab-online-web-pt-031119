@@ -1,5 +1,5 @@
 class Post 
-  attr_accessor :author :title 
+  attr_accessor :author, :title 
   @@all = [ ]  #keeps track of all the posts for the post class
   
   def self.all #exposes the @@varialbe - is self because you'll call Post.call - can call from any class
