@@ -20,8 +20,8 @@ class Author
 # => "My Great Blog Post"
   
   def add_post_by_title(post_title)  
-    post = Post.new(post_title)
+    post = Post.new(post_title) #we're passing "MGBP" to post.new 
     post.author = self
-    
+    @@all << post 
   end     #def 
 end          #class 
