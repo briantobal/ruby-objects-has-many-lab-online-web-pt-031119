@@ -8,7 +8,7 @@ class Author
   end     #def 
   
   def posts 
-    Post.all 
+    Post.all.select {|post| post.author=self} #we're getting all posts, and sorting by the author, which is why there's a self there 
   end     #def 
   
   def add_post (new_post)
