@@ -16,7 +16,7 @@ class Author
   end     #def 
   
   def add_post_by_title (post_title)  
-    
+    binding.pry
   end     #def 
 
 end          #class 
