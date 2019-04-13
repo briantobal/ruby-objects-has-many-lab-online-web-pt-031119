@@ -21,9 +21,17 @@ class Author
 #  post_title  #A 
 # => "My Great Blog Post"
   
-  def add_post_by_title (post_title)  
+  def add_post_by_title(post_title)  
     post_title.author = self    
     Post.new(post_title)        
+        
+        
+   # def add_post_by_title(song_name)
+   # song = Song.new(song_name)
+   # song.artist = self 
+   # @songs << song
+  #  end     #def     
+        
         
   end     #def 
 end          #class 
