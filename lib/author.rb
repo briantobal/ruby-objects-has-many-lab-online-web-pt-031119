@@ -22,8 +22,8 @@ class Author
 # => "My Great Blog Post"
   
   def add_post_by_title (post_title)  
-    post_title.author = self    #needs to add a new post to betty 
-    Post.new(post_title)        #when you call betty.post.last.title you get add_post_by_title
-            #expect(betty.posts.last.author).to eq(betty)
+    post_title.author = self    
+    Post.new(post_title)        
+        
   end     #def 
 end          #class 
