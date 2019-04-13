@@ -11,4 +11,8 @@ class Post
     @@all << self #adds new post to @@all - self is a post 
   end     #def 
   
+  def author
+    author =
+  end     #def 
+  
 end 
