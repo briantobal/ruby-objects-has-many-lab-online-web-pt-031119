@@ -6,8 +6,8 @@ class Post
     @@all 
   end     #def 
   
-  def initialize(name)
-    @name = name 
+  def initialize(title)
+    @title = title 
     @@all << self #adds new post to @@all - self is a post 
   end     #def 
 
