@@ -10,7 +10,6 @@ class Post
     @name = name 
     @@all << self #adds new post to @@all - self is a post 
   end     #def 
-  
-  
+
   
 end 
